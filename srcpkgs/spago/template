@@ -1,0 +1,25 @@
+# Template file for 'spago'
+#
+# todo: replace fail from monad with error (I think this is the fix)
+pkgname=spago
+version=0.19.1
+revision=1
+#archs="i686 x86_64"
+#wrksrc=
+#create_wrksrc=yes
+build_style=haskell-stack
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+#hostmakedepends=""
+makedepends="zlib-devel"
+depends="git"
+short_desc="package management and build tool for the purescript projects"
+maintainer="Wayne Van Son <waynevanson@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/purescript/spago"
+distfiles="https://github.com/purescript/spago/archive/refs/tags/${version}.tar.gz"
+checksum=630223e0cd6dee3fd1cdf65c454f1f34d56a95c7d330d954a129bc6edd304105
+
