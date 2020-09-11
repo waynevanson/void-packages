@@ -1,0 +1,17 @@
+# Template file for 'jetbrains-mono-ttf'
+pkgname=jetbrains-mono-ttf
+version=2.225
+revision=2
+wrksrc="JetBrainsMono-${version}"
+short_desc="Typeface made for developers. Monospace font created by JetBrains"
+maintainer="Wayne Van Son <waynevanson@gmail.com>"
+license="OFL-1.1"
+homepage="https://www.jetbrains.com/lp/mono/"
+distfiles="https://github.com/JetBrains/JetBrainsMono/archive/v${version}.tar.gz"
+checksum="106838eb99ff64591e22862c3f3b1a3f7330ffb79fca85c1bcf5470b0997fb89"
+font_dirs="/usr/share/fonts/TTF"
+
+do_install() {
+	vmkdir /usr/share/fonts/TTF
+	find . -type f -name '*.ttf' -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/TTF \;
+}
