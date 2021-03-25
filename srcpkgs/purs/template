@@ -1,0 +1,22 @@
+# Template file for 'purs'
+pkgname=purs
+version=0.14.0
+revision=1
+#archs="i686 x86_64"
+#wrksrc=
+#create_wrksrc=yes
+build_style=haskell-stack
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends=""
+makedepends="ncurses-libtinfo-devel ncurses-devel zlib-devel"
+depends=""
+short_desc="Compiler for purescript: strongly typed language that compiles to javascript"
+maintainer="Wayne Van Son <waynevanson@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/purescript/purescript"
+distfiles=https://github.com/purescript/purescript/archive/refs/tags/v${version}.tar.gz""
+checksum=e5d3e3f3f33b8165b77e5d916bae33f31a7e63239381704f16ec4c04bbaac5af
